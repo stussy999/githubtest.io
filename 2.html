@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmoteka</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+
+<body>
+    <div id="flex">
+
+        <div id="top">
+            <img src="klaps.png"> </div>
+        <div id="top">
+            <h1>Baza Filmów</h1>
+        </div>
+        <div id="top">
+            <form action="1.php" method="POST">
+                <select name="gatunek">
+                    <option value="1">Sci-Fi</option>
+                    <option value="2">animacja</option>
+                    <option value="3">dramat</option>
+                    <option value="4">horror</option>
+                    <option value="5">komedia</option>
+                </select>
+                <input type="submit" name="button" value="Filmy">
+            </form>
+        </div>
+        <div id="top">
+            <img src="gwiezdneWojny.jpg">
+        </div>
+    </div>
+    <div id="flex">
+        <div id="left">
+            <h2>Wybrano filmy</h2>
+            <?php
+                $poloczenie = mysqli_connect("localhost", "root","","dane"):
+            ?>
+
+
+
+        </div>
+        <div id="right">
+            <h2>Wszystkie filmy</h2>
+        </div>
+    </div>
+    <div id="stopka">
+        Autor:Ukrainiec
+        <p>
+            <a href="kwerendy.txt">Zapytania do bazy</a>
+            <a href="http://www.filmy.pl" target="_blank">Przejdź do filmy.pl</a>
+        </p>
+    </div>
+</body>
+
+</html>

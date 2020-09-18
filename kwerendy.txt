@@ -1,0 +1,2 @@
+SELECT `id`, `tytul` FROM `filmy` WHERE `gatunki_id`=5
+SELECT `filmy`.`id`,`tytul`,`imie`,`nazwisko` FROM `filmy` JOIN `rezyserzy` ON `rezyserzy_id`=`rezyserzy`.`id`
